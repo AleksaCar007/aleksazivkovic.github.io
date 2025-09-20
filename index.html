@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<title>IT u senzorskim sistemima</title>
+</head>
+<body>
+
+<h1 style="text-align: center;">Informacione tehnologije u senzorskim sistemima</h1>
+<div class="info-row">
+    <p class="info-text bordered-paragraph" style="text-align: justify;">Senzori omogućavaju prikupljanje podataka iz okoline u realnom vremenu,<br>
+        što doprinosi automatizaciji, preciznosti i efikasnosti u različitim oblastima, <br>od industrije do svakodnevnog života.<br>
+        Njihova primena olakšava donošenje odluka, unapređuje bezbednost i optimizuje rad sistema.
+    </p>
+    <div class="info-links bordered-div">
+        <a href="https://eucenje.ftn.kg.ac.rs/">
+            Moodle FTN Cacak
+            <img src="moodle-icon.png" alt="Moodle logo" width="32" height="32">
+        </a>
+        <a href="https://www.ftn.kg.ac.rs/">
+            Fakultet tehničkih nauka Čačak
+            <img src="ftn-logo.jpg" alt="FTN logo" width="32" height="32">
+        </a>
+    </div>
+</div>
+<h2 style="text-align:center;">Prikaz podataka iz CSV fajla</h2>
+<div class="dashboard">
+    
+    <div class="sensor-card">
+        <h3>Temperatura (°C)</h3>
+        <canvas id="chart-temperature" width="400" height="200"></canvas>
+    </div>
+    <div class="sensor-card">
+        <h3>Pritisak (kPa)</h3>
+        <canvas id="chart-pressure" width="400" height="200"></canvas>
+    </div>
+    <div class="sensor-card">
+        <h3>Pritisak 2 (kPa)</h3>
+        <canvas id="chart-pressure2" width="400" height="200"></canvas>
+    </div>
+    <div class="sensor-card">
+        <h3>Zvuk (dBA)</h3>
+        <canvas id="chart-sound" width="400" height="200"></canvas>
+    </div>
+    <div class="sensor-card">
+        <h3>Svetlo (lx)</h3>
+        <canvas id="chart-light" width="400" height="200"></canvas>
+    </div>
+    <div class="sensor-card">
+        <h3>Vlaznost (%RH)</h3>
+        <canvas id="chart-humidity" width="400" height="200"></canvas>
+    </div>
+</div>
+<div class="table-full">
+    <h2 style="text-align:center;">Svi podaci (tabela)</h2>
+    <div id="table-container"></div>
+</div>
+</div>
+<script src="script.js"></script>
+</div>
+
+<footer class="page-footer">
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="to-top-btn">Vrati se na vrh</button>
+    <div class="author-info">
+        <span>Ime: [Aleksa Živković]</span> | <span>Indeks: [106/2020]</span> | <span>Linkedin: [<a href="https://www.linkedin.com/in/aleksa-živković-5803b3317">Moja Linkedin stranica</a>]</span>
+       </div>
+</footer>
+</body>
+</html> 
