@@ -67,7 +67,7 @@ function createSensorChart(canvasId, dataRows, timeIdx, valueIdx, label, color) 
           display: true,
           title: {
             display: true,
-            text: 'Vreme (°C)',
+            text: 'Vreme (s)',
             font: { size: 14 }
           },
           ticks: {
@@ -134,3 +134,4 @@ function displayFullTable(rows) {
   html += '</table>';
   container.innerHTML = html;
 }
+
