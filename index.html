@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>IT u senzorskim sistemima</title>
+</head>
+<body>
+
+<h1 style="text-align: center;">Informacione tehnologije u senzorskim sistemima</h1>
+
+<div class="info-row">
+  <p class="info-text bordered-paragraph" style="text-align: center; padding: 3%;">
+    Senzori omogućavaju prikupljanje podataka iz okoline u realnom vremenu,
+    što doprinosi automatizaciji, preciznosti i efikasnosti u različitim oblastima, 
+    od industrije do svakodnevnog života.
+    Njihova primena olakšava donošenje odluka, unapređuje bezbednost i optimizuje rad sistema.
+  </p>
+  <div class="info-links bordered-div">
+    <h3>Brzi linkovi</h3>
+    
+    <a href="https://www.ftn.kg.ac.rs/">
+      Fakultet tehničkih nauka Čačak
+      <img src="ftn-logo.jpg" alt="FTN logo" width="32" height="32">
+    </a>
+    <a href="https://eucenje.ftn.kg.ac.rs/">
+      Moodle FTN Cacak
+      <img src="moodle-icon.png" alt="Moodle logo" width="32" height="32">
+    </a>
+  </div>
+</div>
+
+<h2 style="text-align:center;">Prikaz podataka iz CSV fajla</h2>
+
+<div class="dashboard">
+  <div class="sensor-card">
+    <h3>Temperatura (°C)</h3>
+    <canvas id="chart-temperature"></canvas>
+  </div>
+  <div class="sensor-card">
+    <h3>Pritisak (kPa)</h3>
+    <canvas id="chart-pressure"></canvas>
+  </div>
+  <div class="sensor-card">
+    <h3>Pritisak 2 (kPa)</h3>
+    <canvas id="chart-pressure2"></canvas>
+  </div>
+  <div class="sensor-card">
+    <h3>Zvuk (dBA)</h3>
+    <canvas id="chart-sound"></canvas>
+  </div>
+  <div class="sensor-card">
+    <h3>Svetlo (lx)</h3>
+    <canvas id="chart-light"></canvas>
+  </div>
+  <div class="sensor-card">
+    <h3>Vlaznost (%RH)</h3>
+    <canvas id="chart-humidity"></canvas>
+  </div>
+</div>
+
+<div class="table-full">
+  <h2 style="text-align:center;">Svi podaci (tabela)</h2>
+  <div id="table-container"></div>
+</div>
+
+<footer class="page-footer">
+
+<div class="youtube-video">
+  <p style="text-align: justify; padding-left: 5%; padding-right: 5%;">Arduino Nano je popularna porodica mikrokontrolerskih pločica malih dimenzija, zasnovana na Atmel ili ARM čipovima. 
+    Namenjena je za projekte gde je potrebna kompaktna i niskopotrošna elektronika, a pritom nudi sve osnovne funkcionalnosti većih Arduino modela. 
+    Nano pločice se lako povezuju putem USB-a, imaju veliki broj digitalnih i analognih pinova, i podržavaju različite senzore i module. 
+    Zbog svoje veličine i fleksibilnosti, veoma su pogodne za primenu u senzorskim sistemima, robotici i uređajima za Internet stvari (IoT).</p>
+  <h2>Za više informacija o Arduino Nano porodici pogledajte video ispod:</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/_IERDBToEkI?si=aVsf_aEpUrnsYXmn" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+</div>
+
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="to-top-btn">Vrati se na vrh</button>
+  <div class="author-info">
+    <span>Ime: Aleksa Živković</span> |
+    <span>Indeks: 106/2020</span> |
+    <span>Linkedin: <a href="https://www.linkedin.com/in/aleksa-živković-5803b3317">Moja Linkedin stranica</a></span>
+  </div>
+  
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
